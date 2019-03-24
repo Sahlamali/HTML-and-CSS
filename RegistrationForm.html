@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Register </title>
+</head>
+<body>
+ <center>
+   <h1>
+      Registration Form
+   </h1>
+ </center>
+ <br>
+<center>
+<table style="border: 1px solid white; ">
+ <form id="form1">
+ <tr>
+  <th style="text-align:right;">  </th>
+  <th style="text-align:left;">   </th>
+ </tr>
+ <tr>
+  <td style="text-align:right;"> <label for="user">User id:  </label></td>
+  <td> <input type="text" id="user" name="userid" required autofocus maxlength="12" minlength="5" size="30"placeholder="Required and must be of length 5 to 12"></td>
+   </tr>
+   <tr>
+    <td style="text-align:right;"><label for="password">Password:  </label></td>
+   <td><input type="password" id="password" name="userpassword" required maxlength="12" minlength="7" size="30" placeholder="Required and must be of length 7 to 12"></td>
+   </tr>
+    <tr>
+	<td style="text-align:right;"><label for="name">Name:  </label></td>
+   <td><input type="text" id="name" name="username" size="30" placeholder="Required and alphabets only" required ></td>
+   </tr>
+     <tr>
+	<td style="text-align:right;"><label for="address">Address:  </label></td>
+   <td><input type="text" id="address" name="useraddress" size="30" placeholder="Optional"></td>
+   </tr>
+   <tr>
+     <td style="text-align:right;"><label for="country">Country</label>
+	 </td>
+	     <td><select>
+		     <option value="country">(Please select a country)</option>
+		     <option value="India">India</option>
+			 <option value="China">China</option>
+			 <option value="Japan">Japan</option>
+			 <option value="Malaysia">Malaysia</option>
+			 <option value="Singapore">Singapore</option>
+			 <option value="Hong Kong">Hong Kong</option>
+			 <option value="USA">USA</option>
+		   </select>
+     </td>	 
+   </tr>
+    <tr>
+	<td style="text-align:right;"><label for="zip">ZIP Code:  </label></td>
+   <td><input type="number" id="zip" name="usercode" required placeholder="Required" min="000000" max="1000000" size="20"></td>
+   </tr>
+   <!--To enter the Email-->
+   <tr>
+	<td style="text-align:right;"><label for="mail">Email:  </label></td>
+   <td><input type="email" id="mail" name="useremail" required placeholder="Required and must be a valid email" size="30"></td>
+   </tr>
+  <!--Radio button for selecting the gender--> 
+   <tr>
+    <td style="text-align:right;"><label for="Gender">Gender:</label>
+	</td>
+	<td><input type="radio" id="Gender" name="gender" value="Male" required>Male
+	    <input type="radio" id="Gender" name="gender" value="Female" required>Female
+	</td>
+  </tr>
+   
+ <!--Checkbox for selecting the language-->
+  <tr>
+  <td style="text-align:right;">
+    <label for="language" > Language:</label>
+  </td>
+  <td>
+   
+    <input type="checkbox" id="language" value="English" checked >English
+    <input type="checkbox" id="language" value="Non-English" >Non-English
+  </td>
+  </tr>
+ <!--The about field  -->
+ 
+ <tr>
+ <td style="text-align:right;">
+    <label for="about">About:</label>
+</td>
+ <td>
+  <textarea id="about" rows="10" cols="30">
+  </textarea>
+ </td>
+ </tr>
+ 
+ </form>
+ 
+ </table>
+  <input type="submit" form="form1">
+  </center>
+</body>
+
+</html>
